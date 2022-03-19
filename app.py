@@ -20,7 +20,7 @@ def index():
     data=response["data"]
 
     f=response["data"]
-    for i in f["facebookPosts"]:
+    for i in f["facebookposts"]:
         df1.append([i["id"],i["message"]])
     d=pd.DataFrame(df1,columns=["user_id","user_message"])
     sdf=d["user_message"]
